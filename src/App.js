@@ -11,11 +11,15 @@ class App extends Component {
       <Container component="article" maxWidth="sm">
         <Typography variant="h3" align="center" component="h1" color="primary">
           Formulário de Cadastro
-        </Typography>      
-        <FormularioCadastro />
+        </Typography>
+        <FormularioCadastro aoEnviar={aoEnviarForm} />
       </Container>
     );
   }
+}
+
+function aoEnviarForm(dados) {
+  console.log(dados)
 }
 
 export default App;
