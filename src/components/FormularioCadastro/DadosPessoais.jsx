@@ -21,6 +21,7 @@ export default function DadosPessoais({ aoEnviar, validarCPF }) {
                 onChange={(event) => setNome(event.target.value)}
                 id="nome"
                 label="Nome"
+                required
                 variant="outlined"
                 margin="normal"
                 fullWidth
@@ -31,6 +32,7 @@ export default function DadosPessoais({ aoEnviar, validarCPF }) {
                 onChange={(event) => setSobrenome(event.target.value)}
                 id="sobrenome"
                 label="Sobrenome"
+                required
                 variant="outlined"
                 margin="normal"
                 fullWidth
@@ -47,6 +49,7 @@ export default function DadosPessoais({ aoEnviar, validarCPF }) {
                 helperText={erros.cpf.texto}
                 id="CPF"
                 label="CPF"
+                required
                 variant="outlined"
                 margin="normal"
                 fullWidth
@@ -75,7 +78,7 @@ export default function DadosPessoais({ aoEnviar, validarCPF }) {
 
             />
 
-            <Button variant="contained" color="primary" type="submit">Cadastrar</Button>
+            <Button variant="contained" color="primary" type="submit">Próximo</Button>
 
         </form>
     )
